@@ -31,10 +31,10 @@ public class DefaultPlayerMovement : MonoBehaviour {
             transform.Translate((Vector3.right) * moveSpd * Time.deltaTime);
         }
 
-        if(GetComponent<Rigidbody>().velocity.x > 20f)
+        if(GetComponent<Rigidbody>().velocity.x > 40f)
         {
             Vector3 newVelocity = GetComponent<Rigidbody>().velocity.normalized;
-            newVelocity *= 20f;
+            newVelocity *= 40f;
             GetComponent<Rigidbody>().velocity = newVelocity;
         }
 

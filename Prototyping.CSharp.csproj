@@ -97,9 +97,12 @@
     <Compile Include="Assets\Battlehub\UIControls\ListBox.cs" />
     <Compile Include="Assets\Battlehub\UIControls\ListBoxItem.cs" />
     <Compile Include="Assets\MyScripts\DefaultPlayerMovement.cs" />
+    <Compile Include="Assets\MyScripts\DestroyMe.cs" />
+    <Compile Include="Assets\MyScripts\FireBullet.cs" />
     <Compile Include="Assets\MyScripts\ObstacleBounds.cs" />
     <Compile Include="Assets\MyScripts\PlayerController.cs" />
     <Compile Include="Assets\MyScripts\PlayerMovement.cs" />
+    <Compile Include="Assets\MyScripts\shootBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Battlehub\MeshCombiner\MeshCombiner Documentation.txt" />

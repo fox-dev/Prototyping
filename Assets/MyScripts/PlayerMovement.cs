@@ -87,8 +87,8 @@ public class PlayerMovement : MonoBehaviour {
 
         if (controller.collisions.below)
         {
-            //float targetVelocityX_input = input.x * moveSpd;
-            float targetVelocityX_input = 30f;
+            float targetVelocityX_input = input.x * moveSpd;
+            //float targetVelocityX_input = 30f;
             float targetVelocityX = Mathf.Sin(controller.collisions.currentSlopeAngle * Mathf.Deg2Rad) * -gravity;
             velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX + targetVelocityX_input, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
             controller.collisions.speedBeforeJump = velocity.x;
